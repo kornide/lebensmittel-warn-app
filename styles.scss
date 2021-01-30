@@ -4,3 +4,160 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+header {
+  margin: 50px;
+
+  h1 {
+    text-align: center;
+  }
+
+  mat-form-field {
+    margin-bottom: -1.34375em;
+    width: 300px;
+  }
+
+  mat-button-toggle-group {
+    margin-left: 10px;
+
+    &.no-border {
+      border: none;
+    }
+  }
+}
+
+main {
+  margin: 50px;
+
+  mat-card {
+    max-width: 300px;
+    height: 275px;
+    margin: 10px;
+
+    mat-card-header {
+      height: 80px;
+    }
+
+    img[mat-card-image] {
+      display: block;
+      max-width: 200px;
+      width: auto;
+      height: 150px;
+      margin: auto;
+    }
+
+    mat-card-content {
+      height: 75px;
+      margin-top: 20px;
+      text-align: center;
+
+      p {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+mat-button-toggle {
+  &[ng-reflect-value="A"],
+  &[ng-reflect-value="B"],
+  &[ng-reflect-value="C"],
+  &[ng-reflect-value="D"],
+  &[ng-reflect-value="E"] {
+    font-weight: bold;
+    font-size: 30px;
+    width: 48px;
+  }
+
+  &[ng-reflect-value].mat-button-toggle-checked {
+    &[ng-reflect-value="A"],
+    &[ng-reflect-value="B"],
+    &[ng-reflect-value="C"],
+    &[ng-reflect-value="D"],
+    &[ng-reflect-value="E"] {
+      color: white;
+    }
+
+    .material-icons {
+      &.keyboard_arrow_up {
+        color: lightgray;
+      }
+
+      &.keyboard_arrow_down {
+        color: black;
+      }
+    }
+
+    &.background-color-white {
+      background-color: white;
+    }
+  }
+
+  &[ng-reflect-value="A"] {
+    background-color: #00803d;
+    color: #00a64f;
+  }
+
+  &[ng-reflect-value="B"] {
+    background-color: #86bc26;
+    color: #a1e22d;
+  }
+
+  &[ng-reflect-value="C"] {
+    background-color: #ffcc00;
+    color: #ffdd00;
+  }
+
+  &[ng-reflect-value="D"] {
+    background-color: #ef7d00;
+    color: #ff9600;
+  }
+
+  &[ng-reflect-value="E"] {
+    background-color: #e63312;
+    color: #ff4813;
+  }
+
+  &.float-right {
+    float: right;
+  }
+
+  .material-icons {
+    &.keyboard_arrow_up {
+      color: black;
+      margin-bottom: -25%;
+    }
+
+    &.keyboard_arrow_down {
+      color: lightgray;
+      margin-top: -25%;
+    }
+  }
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.flex-direction-column {
+    flex-direction: column;
+  }
+
+  &.align-items-center {
+    align-items: center;
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  .flex-child {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
